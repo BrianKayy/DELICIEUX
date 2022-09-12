@@ -19,13 +19,14 @@ body{
 }
 
 .side-bar{
-    height: 22em;
-    width: 10em;
+    height: 20em;
+    width: 8em;
     z-index: 1;
     position: fixed;
     overflow-x: hidden;
     text-align: center;
     background-color: #000;
+    border-radius: 1em;
 }
 
 .side-bar .bar{
@@ -37,31 +38,323 @@ body{
 .side-bar .bar a{
     text-decoration: none;
     font-size: 1.2em;
-    width: 9em;
+    width: 7em;
     height: 2em;
-    color: #999;
+    color: rgb(196, 192, 192);
+    font-weight: 500;
 }
 
 .side-bar .bar a:hover{
-    background-color: #fff;
+    background-color: rgb(207, 197, 197);
     color: #000;
+}
+
+/*--------- media query for sidebar-----------*/
+@media only screen and (max-width: 600px) {
+      
+ .fa-bars{
+    font-size: 1em;
+    margin: 1em;
+    cursor: pointer;
+}	
+
+  
+.side-bar{
+    height: 16em;
+    width: 7.5em;
+    z-index: 1;
+    position: fixed;
+    overflow-x: hidden;
+    text-align: center;
+    background-color: #000;
+    border-radius: 1em;
 }
 
 
 
+.side-bar .bar{
+    margin-top: 1.5em;
+    display: grid;
+
+}
+}
 
 
 
+/*-------- horizontal Nav bar--------*/
+ 
 
 
 
+.nav-bar{
+    width: 100%;
+    height: 7em;
+    position: fixed;
+    background:  #ffa886;
+    flex-wrap: wrap;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 1em;
+}
+
+.nav-bar .img img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 8em;
+    height: 7em;
+}
+
+.right-bar{
+    display: inline;
+    position: relative;
+
+}
+
+.right-bar .search{
+    height: 4em;
+    width: 22em;
+    background: #fff;
+    display: inline-flex;
+    border-radius: 2em;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.right-bar .search input{
+    outline: none;
+    border: none;
+    color: #444;
+    font-size: 1.1em;
+}
+ 
+.right-bar .search button{
+    border: none;
+    background: #fff;
+    cursor: pointer;
+}
+
+.right-bar .search .fa-magnifying-glass{
+    color: #777;
+    font-size: 1.5em;
+}
+ 
+.right-bar #button{
+    position: relative;
+    display: inline-flex;
+    margin-left: 20em;
+}
+
+.right-bar #button .button{
+    width: 7em;
+    height: 3em;
+    border: none;
+    border-radius: 1.3em;
+    font-size: 1.3em;
+    background: rgb(11, 87, 186);
+    cursor: pointer;
+    color: #fff;
+}
+.right-bar #button .button:hover{
+    border: solid #fff;
+}
 
 
 
+.right-bar #button .button-2{
+    width: 7em;
+    height: 3em;
+    border: none;
+    border-radius: 1.3em;
+    font-size: 1.3em;
+    background: #ff9901;
+    cursor: pointer;
+    color: #fff;
+    margin-left: 2em;
+}
+
+
+.right-bar #button .button-2:hover{
+    border: solid #fff;
+}
+   /*--------media query for the horizontal navBar-----------*/
 
 
 
+   @media only screen and (min-device-width : 650px) and (max-width: 1200px)
+   {
+         
+  
+      .nav-bar{
+          width: 100%;
+          height: 7em;
+          position: fixed;
+          background:  #ffa886;
+          flex-wrap: wrap;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+          border-radius: 1em;
+      }
+      
+      .nav-bar .img img{
+          width: 6em;
+          height: 5em;
+      }
+      
+      .right-bar{
+          display: flex;
+          position: relative;
+      
+      }
+      
+      .right-bar .search{
+          height: 2em;
+          width: 14em;
+          background: #fff;
+          display: inline-flex;
+          border-radius: 10px;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+      }
+      
+      .right-bar .search input{
+          outline: none;
+          border: none;
+          color: #444;
+          font-size: 1em;
+      }
+      
+         
+      .right-bar .search button{
+          border: none;
+          background: #fff;
+          cursor: pointer;
+      }
+      
+      .right-bar .search .fa-magnifying-glass{
+          color: #777;
+          font-size: 0.8em;
+      } 
+      
+      
+      
+  .right-bar #button{
+      position: relative;
+      display: inline-flex;
+      margin-left: 0em;
+  }
+  
+  .right-bar #button .button{
+      width: 5em;
+      height: 2em;
+      border: none;
+      border-radius: 1em;
+      font-size: 1.1em;
+      background: rgb(11, 87, 186);
+      cursor: pointer;
+      color: #fff;
+      margin-left: 4px;
+  }
+  .right-bar #button .button:hover{
+      border: solid #fff;
+  }
+  
+  
+  
+  .right-bar #button .button-2{
+      width: 5m;
+      height: 2em;
+      border: none;
+      border-radius: 1em;
+      font-size: 1.1em;
+      background: #ff9901;
+      cursor: pointer;
+      color: #fff;
+      margin-left: 4px;
+  }
+  
+  
+  .right-bar #button .button-2:hover{
+      border: solid #fff;
+  }
+      
+  
+  }
+  
 
+
+
+/* Portrait and Landscape */
+@media only screen and (max-width: 600px) {
+       
+.nav-bar{
+    width: 100%;
+    height: 6em;
+    position: fixed;
+    background:  #ffa886;
+    flex-wrap: wrap;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 1em;
+}
+
+.nav-bar .img img{
+    width: 5em;
+    height: 4em;
+}
+
+.right-bar{
+    display: grid;
+    position: relative;
+
+}
+
+.right-bar .search{
+    height: 2em;
+    width: 13em;
+    background: #fff;
+    display: inline-flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 19px;
+}
+
+.right-bar .search input{
+    outline: none;
+    border: none;
+    color: #444;
+    font-size: 0.8em;
+}
+
+   
+.right-bar .search button{
+    border: none;
+    background: #fff;
+    cursor: pointer;
+}
+
+.right-bar .search .fa-magnifying-glass{
+    color: #777;
+    font-size: 0.8em;
+} 
+
+
+.right-bar #button{
+    display: none;
+}
+
+
+}
 
 
 
