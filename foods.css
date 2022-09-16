@@ -1,0 +1,92 @@
+.starters{
+    margin: auto;
+    text-align: center;
+    max-width: 1080px;
+    height: 100%;
+    width: 100%;
+}
+
+.starters h1{
+    text-decoration: #f4976c overline;
+    font-weight: 600;
+    color: #303c6c;
+} 
+
+.starters .row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+.starters .row .col-5{
+     position: absolute;
+     text-align: left;
+     background-color: #fbe8a6;
+     border: 6px solid #f4976c;
+     border-radius: 15px;
+     flex-basis: fit-content;
+     float: left;
+}
+
+.starters .row .col-5 .myImage{
+    width: 27rem;
+    height: 20rem;
+    border-radius: 15px;
+}
+
+.starters .row .col-5 .next{
+    border: 1px solid #303c6c;
+    color: #303c6c;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #b4dfe5;
+    font-size: 16px;
+}
+
+.starters .row .col-5 .items{
+    text-align: center;
+}
+
+.col-5 .items h6{
+      color: #303c6c;
+      font-size: 1rem;
+}
+
+
+.col-5 .items h5{
+    color: #303c6c;
+    font-size: 1.5rem;
+}
+
+.col-5 .items button{
+    width: 6rem;
+    height: 2.7rem;
+    color: #303c6c;
+    font-size: 1.1rem;
+    border: 2px solid #303c6c;
+    background-color: #b4dfe5;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
