@@ -2,51 +2,270 @@ body{
     overflow-x: hidden;
 }
 .food-starter{
-    max-width: 1080px;
     margin: auto;
     padding: 0 25px;
 }
 
+
 .food-starter h3{
+    margin-top: 30px;
     color: #303c6c;
     text-decoration: #f4976c overline;
-    font-weight: 30px;
+    font-size: 35px;
     text-align: center;
 }
 
 .food-starter .starter-container{
+    margin: auto;
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    max-width: 1150px;
+    
 }
 
 .food-starter .starter-container .col{
+    margin-top: 20px;
     flex-basis: 20%;
-    padding-left: 3px;
+    margin-left: 25px;
     min-width: 400px;
     border-radius: 15px;
-    border: 6px solid #;
+    border: 6px solid #f4976c;
 
 }
 
 .food-starter .starter-container .col img{
     padding: 0;
     height: 30vh;
-    width: 22vw;
+    width: 21vw;
     border-radius: 15px;
     
 }
 
+.food-starter .starter-container .col .fa-forward{
+    color: #303c6c;
+    font-size: 18px;
+}
 
+
+.food-starter .starter-container .col .buttons {
+    color: #303c6c;
+    font-size: 18px;
+    background-color: #b4dfe5;
+    border: 2px solid #303c6c;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 10px;
+    text-align: center;
+    width: 100px;
+    transition: transform 1.5s;
+}
+
+
+.food-starter .starter-container .col .buttons:hover{
+    border: 2px solid #f4976c;
+    transform: translateY(4px);
+}
 
 .food-starter .starter-container .col .items{
             display: inline-flex;
-            justify-content: space-between;
-            align-items: center;
-            align-content: center;
-            padding-left: 10px;
+            
 }
+
+
+.food-starter .starter-container .col h5,h6{
+    color: #303c6c;
+    font-size: 20px;
+}
+
+
+
+@media only screen and (min-device-width : 650px) and (max-width: 1200px){
+   
+.food-starter{
+    margin: auto;
+    padding: 0 12px;
+}
+
+.food-starter h3{
+    color: #303c6c;
+    text-decoration: #f4976c overline;
+    font-size: 25px;
+    text-align: center;
+}
+
+.food-starter .starter-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.food-starter .starter-container .col{
+    margin-top: 12px;
+    display: block;
+    margin-left: 25px;
+    /*max-width: 300px;*/
+    border-radius: 10px;
+    border: 4px solid #f4976c;
+    height: 100%;
+}
+
+.food-starter .starter-container .col img{
+    padding: 0;
+    height: 180px;
+    width: 290px;
+    border-radius: 12px;
+    
+}
+
+.food-starter .starter-container .col .fa-forward{
+    color: #303c6c;
+    font-size: 15px;
+}
+
+
+.food-starter .starter-container .col .buttons {
+    color: #303c6c;
+    font-size: 15px;
+    background-color: #b4dfe5;
+    border: 2px solid #303c6c;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    text-align: center;
+    width: 70px;
+    transition: transform 1.5s;
+}
+
+.food-starter .starter-container .col .items{
+            display: inline-flex;
+            
+}
+
+
+.food-starter .starter-container .col h5,h6{
+    color: #303c6c;
+    font-size: 16px;
+} 
+}
+
+
+/* Portrait and Landscape */
+@media only screen and (max-width: 600px){
+
+     
+.food-starter{
+    margin: auto;
+    padding: 0 12px;
+}
+
+.food-starter h3{
+    color: #303c6c;
+    text-decoration: #f4976c overline;
+    font-size: 25px;
+    text-align: center;
+}
+
+.food-starter .starter-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.food-starter .starter-container .col{
+    margin-top: 12px;
+    display: grid;
+    min-width: 320px;
+    border-radius: 10px;
+    border: 4px solid #f4976c;
+    height: 100%;
+}
+
+.food-starter .starter-container .col img{
+    padding: 0;
+    height: 150px;
+    width: 290px;
+    border-radius: 12px;
+    
+}
+
+.food-starter .starter-container .col .fa-forward{
+    color: #303c6c;
+    font-size: 15px;
+}
+
+
+.food-starter .starter-container .col .buttons {
+    color: #303c6c;
+    font-size: 15px;
+    background-color: #b4dfe5;
+    border: 2px solid #303c6c;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    text-align: center;
+    width: 70px;
+    transition: transform 1.5s;
+}
+
+.food-starter .starter-container .col .items{
+            display: inline-flex;
+            
+}
+
+
+.food-starter .starter-container .col h5,h6{
+    color: #303c6c;
+    font-size: 16px;
+} 
+
+
+}
+
+
+
+.food-starter .starter-container .col  #input{
+      color: #303c6c;
+      outline: none;
+      width: 65px;
+      margin-left: 2px;
+      border-radius: 4px;
+      border: 2px solid #303c6c ;
+      cursor: pointer;
+}
+
+
+
+.food-starter .starter-container .col  #input::placeholder{
+    color: #303c6c;
+}
+
+
+
+
+.food-starter .starter-container .col  #select{
+    color: #303c6c;
+    outline: none;
+    width: 80px;
+    margin-left: 2px;
+    border-radius: 4px;
+    border: 2px solid #303c6c ;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

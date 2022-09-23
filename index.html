@@ -8,12 +8,15 @@
     <link rel="shortcut icon" href="images/logo.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/ffb4c9eefa.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="foods.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!---------- side nav bar---------->
@@ -65,77 +68,152 @@
     
 <!----------------  foods section------------------>
        <!------- starters  ------->
-        <div class="starters">
-            <h1>STARTERS</h1>
-            <div class="row">
-
-                
-                <div class="col-5">
-                    <img src="images/rolls1.jpg" class="myImage">
-                    <button class="next">Next <i class="fa-solid fa-arrow-right"></i></button>
-                    <div class="items">
-                        <h6>$4.99</h6>
-                        <h5>Spring rolls</h5>
-                        <button>Add <i class="fa-solid fa-cart-plus"></i></button>
-                    </div>
-                </div>  
-            
-
-
-                <div class="col-5">
-                    <img src="images/caesar.jpg" class="myImage">
-                    <button class="next">Next <i class="fa-solid fa-arrow-right"></i></button>
-                    <div class="items">
-                        <h6>$10.49</h6>
-                        <h5>Caesar Salad</h5>
-                        <button>Add <i class="fa-solid fa-cart-plus"></i></button>
-                    </div>
-                </div>
-
-         
-                <div class="col-5">
-                    <img src="images/soup.jpg" class="myImage">
-                    <button class="next">Next <i class="fa-solid fa-arrow-right"></i></button>
-                    <div class="items">
-                        <h6>$10.49</h6>
-                        <h5>Soup</h5>
-                        <button>Add <i class="fa-solid fa-cart-plus"></i></button>
-                    </div>
-                </div>
- 
-
+          <div class="food-starter  ">
+                   <h3>STARTERS</h3>
+                <div class="starter">
+                    <div class="starter-container owl-carousel">
+                        <div class="col">
+                            <img src="images/caesar1.jpg" id="Caesar">
+                            <button class="buttons" onclick="Image1()">Next <i class="fa-solid fa-forward"></i></button> <h5>Caesar Salad</h5>
+                            <div class="items">
+                                <h6>$17.55</h6>
+                                
+                                <form action="">
+                                    <input type="number" placeholder="quantity" id="input">
+                                 </form>
+                                 <button class="buttons">Add <i class="fa-solid fa-plus"></i></button>
+                            </div>
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                        </div>
+        
+                        <div class="col">
+                            <img src="images/soup.jpg" id="Soup">
+                            <button class="buttons" onclick="Image2()">Next <i class="fa-solid fa-forward"></i></button> <h5>French Onion Soup</h5>
+                            <div class="items">
+                                <h6>$8.55</h6>
+                                
+                                <form action="">
+                                    <input type="number" placeholder="quantity" id="input">
+                                 </form>
+                                 <button class="buttons">Add <i class="fa-solid fa-plus"></i></button>
+                            </div>
+        
+                        </div>
+        
+                        <div class="col">
+                            <img src="images/tomato 2.jpg" id="tomato">
+                            <button class="buttons" onclick="Image3()">Next <i class="fa-solid fa-forward"></i></button> <h5>Tomato Bruschetta</h5>
+                            <div class="items">
+                                <h6>$13.55</h6>
+                                
+                                <form action="">
+                                    <input type="number" placeholder="quantity" id="input">
+                                 </form>
+                                 <button class="buttons">Add <i class="fa-solid fa-plus"></i></button>
+                            </div>
+        
+                        </div>
+                           
+                        <div class="col">
+                            <img src="images/rolls.jpg" id="rolls">
+                            <button class="buttons" onclick="Image4()">Next <i class="fa-solid fa-forward"></i></button> <h5>Spring Rolls</h5>
+                            <div class="items">
+                                <h6>$8.55</h6>
+                                
+                                <form action="">
+                                    <input type="number" placeholder="quantity" id="input">
+                                 </form>
+                                 <button class="buttons">Add <i class="fa-solid fa-plus"></i></button>
+                            </div>
+        
+                        </div>
+        
+                    </div> 
+                </div>            
+          </div>
+     <!----------- DRINKS  --------------->     
+     <div class="food-starter  ">
+        <h3>DRINKS</h3>
+        <div class="starter">
+            <div class="starter-container owl-carousel">
+                <div class="col">
+                    <img src="images/water1.jpg" id="water">
+                    <button class="buttons" onclick="Myimage1()">Next <i class="fa-solid fa-forward"></i></button> <h5>Water</h5>
+                    <div class="items">
+                        <h6>$2.15</h6>
+                        
+                        <form action="">
+                           <input type="number" placeholder="quantity" id="input">
+                        </form>
+                        <button class="buttons">Add <i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+           
+                <div class="col">
+                    <img src="images/pepsi1.jpg" id="pepsi">
+                    <button class="buttons" onclick="Myimage2()">Next <i class="fa-solid fa-forward"></i></button> <h5>Pepsi Beverages</h5>
+                    <div class="items">
+                        <h6>$4.55</h6>
+                        
+                        <form action="">
+                           <input type="number" placeholder="quantity" id="input">
+                        </form>
+                        <select name="" id="select">
+                           <option value="">Mirinda</option>
+                           <option value="">Pepsi</option>
+                           <option value="">7up</option>
+                           <option value="">Dr Pepper</option>
+                        </select>
+                        <button class="buttons">Add <i class="fa-solid fa-plus"></i></button>
+                    </div>
+           
+                </div>
+           
+                <div class="col">
+                    <img src="images/cola1.jpg" id="cola">
+                    <button class="buttons" onclick="Myimage3()">Next <i class="fa-solid fa-forward"></i></button> <h5>CocaCola Beverages</h5>
+                    <div class="items">
+                        <h6>$4.55</h6>
+                        
+                        <form action="">
+                           <input type="number" placeholder="quantity" id="input">
+                        </form>
+                        
+                        <select name="" id="select">
+                           <option value="">Cola-can</option>
+                           <option value="">Cola-bottle</option>
+                           <option value="">Fanta</option>
+                           <option value="">Sprite</option>
+                        </select>
+                        <button class="buttons">Add <i class="fa-solid fa-plus"></i></button>
+                    </div>
+           
+                </div>
+                   
+                <div class="col">
+                    <img src="images/coffee1.jpg" id="coffee">
+                    <button class="buttons" onclick="Myimage4()">Next <i class="fa-solid fa-forward"></i></button> <h5>Coffee</h5>
+                    <div class="items">
+                        <h6>$6.55</h6>
+           
+                        <form action="">
+                           <input type="number" placeholder="quantity" id="input">
+                        </form>
+                        
+                        <select name="" id="select">
+                           <option value="">Americano-hot</option>
+                           <option value="">Espresso</option>
+                           <option value="">Latte-hot</option>
+                           <option value="">Latte-iced</option>
+                           <option value="">Amercano-iced</option>
+                        </select>
+                        <button class="buttons">Add <i class="fa-solid fa-plus"></i></button>
+                    </div>
+           
+                </div>
             </div>
-        </div>
+        </div>  
+    </div>
  
 </body>
 </html>
