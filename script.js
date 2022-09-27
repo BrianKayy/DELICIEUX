@@ -228,18 +228,9 @@ function Myimage4(){
 
 //COURASEL FOR IMAGES........................
 
-$(document).ready(function () {
-    
-if($.isFunction('owlCarousel')){
-    $(".starter-container").owlCarousel({ 
-       loop: true,
-       autoplay: true,
-       autoplayTimeout: 2000,
-       autoplayHoverpause: true,
-       
-    });
-    }
-});
+$(document).ready(function(){
+    $('.carousel').carousel();
+  });
 
 
 

@@ -3,12 +3,12 @@ body{
 }
 .food-starter{
     margin: auto;
-    padding: 0 25px;
+    padding: 0 ;
 }
 
 
 .food-starter h3{
-    margin-top: 30px;
+    margin-top: 25px;
     color: #303c6c;
     text-decoration: #f4976c overline;
     font-size: 35px;
@@ -19,19 +19,29 @@ body{
     margin: auto;
     display: flex;
     justify-content: center;
-    max-width: 1150px;
-    
+    align-items: center;
 }
 
 .food-starter .starter-container .col{
-    margin-top: 20px;
-    flex-basis: 20%;
-    margin-left: 25px;
+    padding-top: 0px;
+    height: 100%;
+    margin-left: 8px;
     min-width: 400px;
     border-radius: 15px;
     border: 6px solid #f4976c;
-
+    transition: transform 0.5s;
+     
 }
+
+.food-starter .starter-container .col:hover{
+    transform: scale3d(1.08, 1.08, 1.08);
+}
+
+
+
+
+
+
 
 .food-starter .starter-container .col img{
     padding: 0;
@@ -63,7 +73,7 @@ body{
 
 .food-starter .starter-container .col .buttons:hover{
     border: 2px solid #f4976c;
-    transform: translateY(4px);
+    transform: scale3d(1.033, 1.1, 1.033);
 }
 
 .food-starter .starter-container .col .items{
@@ -250,7 +260,7 @@ body{
     color: #303c6c;
     outline: none;
     width: 80px;
-    margin-left: 2px;
+    margin-left: 1px;
     border-radius: 4px;
     border: 2px solid #303c6c ;
     cursor: pointer;
