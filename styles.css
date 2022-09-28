@@ -448,7 +448,74 @@ body{
 
 }
 
+@media only screen and (max-width: 600px) {
 
+
+       
+.blog{
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("images/restaurant.jpg");
+    background-repeat: no-repeat;
+    background-size: cover ;
+    margin: 1em 0;
+    background-position: center;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.words{
+    background-color: rgba(255, 255, 255, 0.1);
+   text-align: center;
+   color: rgb(241, 234, 234);
+}
+
+
+.blog .words h1{
+    font-size: 2rem;
+    opacity: 0.83;
+    color: rgb(241, 234, 234);
+}
+
+
+
+.blog .words h6{
+    font-size: 1rem;
+    font-style: italic;
+    opacity: 0.88;
+    color: rgb(241, 234, 234);
+}
+
+
+.blog .words p{ 
+    font-size: 1rem;
+    color: #fff;
+}
+
+
+.blog .words .link{
+    margin-top: 1rem;
+    height: 2rem;
+    width: 10rem;
+    font-size: 0.9rem;
+    color: #fff;
+    border: 3px solid #fbe8a6;
+    background: #303c5f;
+    border-radius: 1rem;
+    transition: transform 1.5s;
+    cursor: pointer;
+}
+
+
+.blog .words .link:hover{
+    border: 2px solid #fff;
+    transform: translateY(-5px);
+}
+
+
+
+}
 
 
 
