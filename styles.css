@@ -258,27 +258,32 @@ body{
 
 
 .nav-bar .myBarz{
-    left: 0.3em;
+    left: 0.4em;
     display: flex;
     position: fixed;
     
 }
 
 .nav-bar .myBarz .fa-bars{
-    font-size: 1.0em;
+    font-size: 1.50em;
     cursor: pointer;
     color: #000;
 }
 
 .nav-bar .img img{
-    width: 5em;
+    
+    position: absolute;
+    width: 4em;
     height: 4em;
+    left: 4em;
+    top: 1em;
+
 }
 
 .right-bar{
     display: grid;
-    position: relative;
-
+    position: fixed;
+    right: 0;
 }
 
 .right-bar .search{
