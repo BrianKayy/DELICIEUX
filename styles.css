@@ -13,14 +13,11 @@ body{
 
 /*---------logo-------*/
 
- .fa-bars{
-    font-size: 2em;
-    margin: 1em;
-    cursor: pointer;
-}
+ 
 
-.side-bar{
-    height: 20em;
+.side-bar{ 
+    margin-top: 8em;
+    height: 22em;
     width: 8em;
     z-index: 1;
     position: fixed;
@@ -31,7 +28,7 @@ body{
 }
 
 .side-bar .bar{
-    margin-top: 3em;
+    margin-top: 2em;
     display: grid;
 
 }
@@ -52,13 +49,6 @@ body{
 
 /*--------- media query for sidebar-----------*/
 @media only screen and (max-width: 600px) {
-      
- .fa-bars{
-    font-size: 1em;
-    margin: 1em;
-    cursor: pointer;
-}	
-
   
 .side-bar{
     height: 16em;
@@ -92,7 +82,6 @@ body{
     height: 7em;
     position: fixed;
     background:  #f4976c;
-    flex-wrap: wrap;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -100,9 +89,23 @@ body{
     border-radius: 1em;
 }
 
+
+.nav-bar .myBarz{
+    left: 2em;
+    display: flex;
+    position: fixed;
+    
+}
+
+.nav-bar .myBarz .fa-bars{
+    font-size: 2em;
+    cursor: pointer;
+    color: #000;
+}
+
 .nav-bar .img img{
     position: absolute;
-    left: 0;
+    left: 8em;
     top: 0;
     width: 8em;
     height: 7em;
@@ -111,7 +114,6 @@ body{
 .right-bar{
     display: inline;
     position: relative;
-
 }
 
 .right-bar .search{
@@ -143,44 +145,8 @@ body{
     font-size: 1.3em;
 }
  
-.right-bar #button{
-    position: relative;
-    display: inline-flex;
-    margin-left: 20em;
-}
-
-.right-bar #button .button{
-    width: 6em;
-    height: 2.5em;
-    border: 3px solid #fbe8a6;
-    border-radius: 1.3em;
-    font-size: 1.3em;
-    background:  #1c3334;
-    cursor: pointer;
-    color: #fff;
-}
-.right-bar #button .button:hover{
-    border: solid #fff;
-}
 
 
-
-.right-bar #button .button-2{
-    width: 6em;
-    height: 2.5em;
-    border: 3px solid  #fbe8a6;
-    border-radius: 1.3em;
-    font-size: 1.3em;
-    background:  #05386b;
-    cursor: pointer;
-    color: #fff;
-    margin-left: 2em;
-}
-
-
-.right-bar #button .button-2:hover{
-    border: solid #fff;
-}
    /*--------media query for the horizontal navBar-----------*/
 
 
@@ -201,6 +167,25 @@ body{
           align-content: center;
           border-radius: 1em;
       }
+      
+
+      
+.nav-bar .myBarz{
+    left: 2em;
+    display: flex;
+    position: fixed;
+    
+}
+
+.nav-bar .myBarz .fa-bars{
+    font-size: 2em;
+    cursor: pointer;
+    color: #000;
+}
+
+
+
+
       
       .nav-bar .img img{
           width: 6em;
@@ -243,47 +228,9 @@ body{
           font-size: 0.8em;
       } 
       
-      
-      
-  .right-bar #button{
-      position: relative;
-      display: inline-flex;
-      margin-left: 0em;
-  }
-  
-  .right-bar #button .button{
-      width: 5em;
-      height: 2em;
-      border: 3px solid #fbe8a6;
-      border-radius: 1em;
-      font-size: 1.1em;
-      background: #1c3334;
-      cursor: pointer;
-      color: #fff;
-      margin-left: 4px;
-  }
-  .right-bar #button .button:hover{
-      border: solid #fff;
-  }
   
   
   
-  .right-bar #button .button-2{
-      width: 4.5em;
-      height: 2em;
-      border: 3px solid #fbe8a6;
-      border-radius: 1em;
-      font-size: 1.1em;
-      background:  #05386b;
-      cursor: pointer;
-      color: #fff;
-      margin-left: 4px;
-  }
-  
-  
-  .right-bar #button .button-2:hover{
-      border: solid #fff;
-  }
       
   
   }
@@ -305,6 +252,22 @@ body{
     align-items: center;
     align-content: center;
     border-radius: 1em;
+}
+
+
+
+
+.nav-bar .myBarz{
+    left: 0.3em;
+    display: flex;
+    position: fixed;
+    
+}
+
+.nav-bar .myBarz .fa-bars{
+    font-size: 1.0em;
+    cursor: pointer;
+    color: #000;
 }
 
 .nav-bar .img img{
@@ -347,11 +310,6 @@ body{
 .right-bar .search .fa-magnifying-glass{
     color: #777;
     font-size: 0.8em;
-} 
-
-
-.right-bar #button{
-    display: none;
 }
 
 
