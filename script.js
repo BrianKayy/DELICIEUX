@@ -226,12 +226,16 @@ function Myimage4(){
 
 
 
-//COURASEL FOR IMAGES........................
+// filter........................
 
 $(document).ready(function(){
-    $('.carousel').carousel();
+    $("#search").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $("#my-search .col").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
   });
-
 
 
 
