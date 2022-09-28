@@ -271,19 +271,14 @@ body{
 }
 
 .nav-bar .img img{
-    
-    position: absolute;
-    width: 4em;
+    width: 5em;
     height: 4em;
-    left: 4em;
-    top: 1em;
-
 }
 
 .right-bar{
     display: grid;
-    position: fixed;
-    right: 0;
+    position: relative;
+
 }
 
 .right-bar .search{
