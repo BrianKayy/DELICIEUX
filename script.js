@@ -226,7 +226,7 @@ function Myimage4(){
 
 
 
-// filter........................
+//  jq searchfilter........................
 
 $(document).ready(function(){
     $("#search").on("keyup", function() {
