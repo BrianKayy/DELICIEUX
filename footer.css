@@ -96,8 +96,209 @@
 }
 
 
+@media only screen and (max-width: 600px) {
+ .footer{
+    background-color: #303c6c;
+    color: #d2fdff;
+    margin-top: 8rem;
+}
 
 
+
+.footer .row{
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+    display: grid;
+    height: 100%;
+    
+}
+
+.footer .row .col-img img{
+    position: relative;
+    width: 8rem;
+    height: 6rem;
+}
+
+
+
+.footer .row .social-media {
+    position: relative;
+    margin-top: 1rem;
+    display: grid;
+    text-align: right;
+}
+
+.footer .row .social-media a .fa-brands, .fa-regular, .fa-solid{
+    
+    font-size: 15px;
+    display: flex;
+    color: #f4976c;
+    text-decoration: none;
+    padding-top: 7px;
+}
+
+
+.footer .row .social-media a h6{ 
+         text-transform: initial;
+         color: #d2fdff;
+         font-size: 8px;
+         margin-left: 5px;
+         font-weight: 400;
+         letter-spacing: 1px;
+}
+
+.footer .row .col-rest{
+    display: grid;
+    position: relative;
+    left: 0;
+    
+}
+
+
+
+
+
+.footer .row .col-rest h5{
+    font-size: 16px;
+    color: #d2fdff;
+}
+
+
+
+.footer .row .col-rest  span a, p, h6{
+    text-decoration: none;
+    font-size: 14px;
+    color: #d2fdff;
+}
+
+
+
+
+
+
+
+
+.copyright{
+    width: 100%;
+    background: #303c6c;
+    height: 15px;
+}
+
+.copyright h6{
+       position: absolute;
+        justify-content: center;
+         color: #f4976c;
+         font-size: 13px;
+         margin-left: 5px;
+         font-weight: 400;
+         background: #303c6c;
+}
+
+}
+
+
+/*
+@media only screen and (min-device-width : 650px) and (max-width: 1200px){
+    .footer{
+        background-color: #303c6c;
+        color: #d2fdff;
+        margin-top: 8rem;
+        display: grid;
+        
+    }
+    
+    
+    
+    .footer .row{
+        justify-content: center;
+        margin: 1rem 0 1rem 0;
+        display: flex;
+        
+    }
+    
+    .footer .row .col-img img{
+        position: relative;
+        width: 13rem;
+        height: 10rem;
+    }
+    
+    
+    
+    .footer .row .social-media {
+        display: grid;
+        text-align: left;
+        position: relative;
+        left: 0;
+    }
+    
+    .footer .row .social-media a .fa-brands, .fa-regular, .fa-solid{
+        
+        font-size: 19px;
+        display: inline-flex;
+        color: #f4976c;
+        text-decoration: none;
+        padding-top: 7px;
+    }
+    
+    
+    .footer .row .social-media a h6{ 
+             text-transform: initial;
+             color: #d2fdff;
+             font-size: 8px;
+             margin-left: 5px;
+             font-weight: 400;
+             letter-spacing: 1px;
+    }
+    
+    .footer .row .col-rest{
+        display: grid;
+        position: relative;
+        left: 0;
+    }
+    
+    
+    
+    
+    
+    .footer .row .col-rest h5{
+        font-size: 16px;
+        color: #d2fdff;
+    }
+    
+    
+    
+    .footer .row .col-rest  span a, p, h6{
+        text-decoration: none;
+        font-size: 14px;
+        color: #d2fdff;
+    }
+    
+    
+    .copyright{
+        width: 100%;
+        background: #303c6c;
+        height: 20px;
+    }
+    
+    .copyright h6{
+           position: absolute;
+            justify-content: center;
+             color: #f4976c;
+             font-size: 13px;
+             margin-left: 5px;
+             font-weight: 400;
+             background: #303c6c;
+    }
+    
+
+
+
+
+
+
+
+
+}
 
 
 
